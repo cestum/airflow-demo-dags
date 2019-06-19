@@ -15,7 +15,7 @@ default_args = {
 }
 
 dag = DAG(
-    '3 Step Model flow', default_args=default_args, schedule_interval=timedelta(minutes=10))
+    '3_Step_Model_flow', default_args=default_args, schedule_interval=timedelta(minutes=10))
 
 input_volume_mount = VolumeMount('data-volume',
                            mount_path='/input-dataset',
